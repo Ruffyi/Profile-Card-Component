@@ -1,2 +1,40 @@
-body {
-  background-color: red; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+:root {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400; }
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: #19a2ae;
+  overflow: hidden; }
+  .root__bg {
+    width: clamp(40rem, 55%, 75rem); }
+  .root__bg--top {
+    position: absolute;
+    top: -30%;
+    left: -5%; }
+    @media (max-width: 37.5rem) {
+      .root__bg--top {
+        top: -20%;
+        left: -40%; } }
+  .root__bg--bottom {
+    position: absolute;
+    bottom: -30%;
+    right: -5%; }
+    @media (max-width: 37.5rem) {
+      .root__bg--bottom {
+        bottom: -10%;
+        right: -40%; } }
