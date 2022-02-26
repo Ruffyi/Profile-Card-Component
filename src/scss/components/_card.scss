@@ -1,0 +1,11 @@
+.card {
+	min-width: 30rem;
+	background-color: map-get($clr, 'clr-primary-white');
+	border-radius: 1rem;
+	z-index: 1;
+	&__bg {
+		height: 13rem;
+		background-image: url('./../../assets/images/bg-pattern-card.svg');
+		border-radius: 1rem 1rem 0 0;
+	}
+}

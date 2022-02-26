@@ -1,0 +1,24 @@
+.profile {
+	@include flex-mother(column);
+	position: relative;
+	padding-top: 7rem;
+	&__img {
+		@include positioning(absolute, 0, 50%);
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		box-shadow: 0 0 0 6px map-get($clr, 'clr-primary-white');
+	}
+	&__name {
+		font-size: 2rem;
+		color: map-get($clr, 'clr-primary-very-dark-desaturated-blue');
+	}
+	&__age {
+		color: map-get($clr, 'clr-neutral-dark-gray');
+		margin-left: 1rem;
+	}
+	&__city {
+		margin: 1rem 0 2.5rem;
+		font-size: 1.5rem;
+		color: map-get($clr, 'clr-neutral-dark-gray');
+	}
+}

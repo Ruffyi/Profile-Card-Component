@@ -1,0 +1,20 @@
+.socials {
+	@include flex-mother(row, center, space-around);
+	width: 100%;
+	height: 10rem;
+	border-top: 1px solid map-get($clr, 'clr-primary-dark-grayish-blue');
+	&__item {
+		flex-grow: 1;
+		height: 100%;
+		@include flex-mother(column);
+		.social__title {
+			color: map-get($clr, 'clr-primary-very-dark-desaturated-blue');
+			margin-bottom: 1rem;
+			font-size: 1.7rem;
+		}
+		.social__description {
+			color: map-get($clr, 'clr-neutral-dark-gray');
+			font-size: 1.3rem;
+		}
+	}
+}
